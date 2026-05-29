@@ -1,5 +1,5 @@
 use std::env;
-const INFO: &str = "key-derive-a0574a";
+const INFO: &str = "key-derive-0dd73c";
 fn main() {
     println!("[{}] System Information:", INFO);
     println!("  OS: {}", env::consts::OS);

@@ -1,4 +1,4 @@
-# key-derive-a0574a
+# key-derive-0dd73c
 
 A Rust key-derive utility.
 
